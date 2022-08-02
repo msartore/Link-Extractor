@@ -28,12 +28,15 @@ android {
             debuggable false
             minifyEnabled true
             multiDexEnabled true
-            archivesBaseName = "Link extractor"
+            archivesBaseName = "Link_extractor"
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
 
         release {
-            minifyEnabled false
+            debuggable false
+            minifyEnabled true
+            multiDexEnabled true
+            archivesBaseName = "Link_extractor"
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }

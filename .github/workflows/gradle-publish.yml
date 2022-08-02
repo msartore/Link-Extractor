@@ -41,4 +41,4 @@ jobs:
       uses: softprops/action-gh-release@v1
       with:
         files: |
-          /home/runner/work/Link-Extractor/Link-Extractor/app/build/outputs/apk/github/Link-Extractor-github.apk
+          /home/runner/work/Link-Extractor/Link-Extractor/app/build/outputs/apk/github/Link_Extractor-github.apk
