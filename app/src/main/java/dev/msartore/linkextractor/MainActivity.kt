@@ -89,15 +89,15 @@ class MainActivity : ComponentActivity() {
                                     getString(R.string.url_copied)
                                 }
                                 else -> {
+                                    clipboard.copyToClipboard(context, urlString.joinToString("\n"))
+
                                     getString(R.string.multiple_url_found)
                                 }
                             }
 
                             Toast.makeText(context, toastText, Toast.LENGTH_SHORT).show()
 
-                            if (urlString.size == 1) {
-                                finish()
-                            }
+                            finish()
                         }
 
                         if (urlString.size != 1) uiVisibility.value = true
@@ -218,13 +218,7 @@ class MainActivity : ComponentActivity() {
                                                 ) {
                                                     TextButtonE(stringResource(id = R.string.copy_all)) {
                                                         cor {
-                                                            var copyBoardResult = ""
-
-                                                            for (url in urlString) {
-                                                                copyBoardResult += url + "\n"
-                                                            }
-
-                                                            clipboard.copyToClipboard(context, copyBoardResult)
+                                                            clipboard.copyToClipboard(context, urlString.joinToString("\n"))
                                                         }
                                                     }
                                                     TextButtonE(stringResource(id = R.string.clear_all)) {
