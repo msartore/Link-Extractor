@@ -1,6 +1,10 @@
 # Link Extractor
 
 <img alt="Logo" src="resources/logo_with_background.png" width="120" />
+<div style="display: flex">
+  <a href="https://www.codefactor.io/repository/github/msartore/link-extractor"><img src="https://www.codefactor.io/repository/github/msartore/link-extractor/badge" alt="CodeFactor" /></a>
+  <img src="https://img.shields.io/github/v/release/msartore/link-extractor" alt="GitHub release (latest by date)" />
+</div>
 
 Link Extractor helps you to extract all the links from a text.
 
