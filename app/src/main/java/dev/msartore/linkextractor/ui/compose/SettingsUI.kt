@@ -155,7 +155,7 @@ fun SettingsUI(
                 horizontalArrangement = Arrangement.Center
             ) {
                 Text(
-                    text = "Gallery v${info?.versionName}",
+                    text = "Link Extractor v${info?.versionName}",
                     fontSize = 10.sp
                 )
             }
